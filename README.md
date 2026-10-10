@@ -6,14 +6,14 @@ A fleet of gas-fired power generation assets relied on time-based and reactive m
 
 ## My Role
 
-Senior Product Manager — responsible for defining the product vision for a predictive asset health capability, aligning engineering and operations stakeholders, and driving delivery of the initial Weibull failure modeling platform.
+Senior Product Manager: responsible for defining the product vision for a predictive asset health capability, aligning engineering and operations stakeholders, and driving delivery of the initial Weibull failure modeling platform.
 
 ## Problem Framing
 
 **Operational reality:**
 - Maintenance decisions were based on OEM recommendations (time-based) or reactive response (run-to-failure)
 - No fleet-wide visibility into component degradation rates or remaining useful life
-- Capital planning was disconnected from actual asset condition — investments were allocated by schedule, not by risk
+- Capital planning was disconnected from actual asset condition: investments were allocated by schedule, not by risk
 - Critical OEM documentation and failure history were scattered across disconnected systems
 
 **Product opportunity:** Build a predictive asset health capability that uses statistical failure modeling to forecast component end-of-life, enabling condition-based maintenance scheduling and risk-weighted capital allocation.
@@ -22,9 +22,9 @@ Senior Product Manager — responsible for defining the product vision for a pre
 
 I structured the product around three capabilities:
 
-1. **Failure prediction** — Weibull distribution models fitted to component failure history, producing probability-of-failure curves over time
-2. **Asset risk quantification** — Combining failure probability with consequence (repair cost, outage impact, safety risk) to produce a single risk score per component
-3. **OEM intelligence repository** — Centralized, searchable repository of OEM documentation to support execution-level maintenance decisions
+1. **Failure prediction**: Weibull distribution models fitted to component failure history, producing probability-of-failure curves over time
+2. **Asset risk quantification**: Combining failure probability with consequence (repair cost, outage impact, safety risk) to produce a single risk score per component
+3. **OEM intelligence repository**: Centralized, searchable repository of OEM documentation to support execution-level maintenance decisions
 
 ## Key Decisions
 
@@ -49,8 +49,8 @@ I structured the product around three capabilities:
 
 ## Lessons Learned
 
-1. **Start with the model users trust** — Reliability engineers already knew Weibull. Starting there built credibility. Trying to introduce a black-box ML model first would have faced organizational resistance.
+1. **Start with the model users trust**: Reliability engineers already knew Weibull. Starting there built credibility. Trying to introduce a black-box ML model first would have faced organizational resistance.
 
-2. **Connect predictions to dollars** — A probability curve alone doesn't drive decisions. Connecting it to financial impact (cost of failure, value of prevention) makes the output actionable for capital planners.
+2. **Connect predictions to dollars**: A probability curve alone doesn't drive decisions. Connecting it to financial impact (cost of failure, value of prevention) makes the output actionable for capital planners.
 
-3. **Data quality is the real bottleneck** — The modeling itself is straightforward. Getting consistent, clean failure history across a multi-decade fleet is the actual hard problem. I spent more time on data product design (provenance, validation, standardization) than on model selection.
+3. **Data quality is the real bottleneck**: The modeling itself is straightforward. Getting consistent, clean failure history across a multi-decade fleet is the actual hard problem. I spent more time on data product design (provenance, validation, standardization) than on model selection.
