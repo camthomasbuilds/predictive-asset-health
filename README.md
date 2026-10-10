@@ -24,6 +24,10 @@ A probability curve doesn't drive decisions. "This component has a 30% probabili
 
 Individual sites don't have enough failure data to train reliable models. I chose fleet-wide models with site-specific operating condition adjustments, providing both statistical power and local relevance.
 
+### 4. Change management from reactive to condition-based
+
+This product required changing how an entire maintenance organization thinks about risk. For decades, teams operated on OEM schedules and reactive response. Shifting to condition-based, data-driven capital allocation meant redefining how reliability engineers assess equipment, how capital planners justify investments, and how O&M teams prioritize work. I embedded change management into the product strategy: started with the Weibull models engineers already trusted, connected outputs to the financial frameworks planners already used, and designed the system so reliability teams could operate it independently rather than depending on a data science team.
+
 ## Results
 
 | Metric | Outcome |
@@ -37,6 +41,7 @@ Individual sites don't have enough failure data to train reliable models. I chos
 ## What This Demonstrates
 
 - **Technical tradeoff judgment** (choosing the right tool over the sophisticated tool)
+- **Change management** (shifting an organization from calendar-based to condition-based maintenance)
 - **Financial framing** (connecting engineering predictions to capital decisions)
 - **Stakeholder-first product design** (building on trusted methodologies to drive adoption)
 - **Data product thinking** (provenance, validation, and standardization as first-class concerns)
